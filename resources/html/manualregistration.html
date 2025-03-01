@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Registration</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="vname">Name</label>
+             <input type="text" id="vname" value="John Doe">
+            <label for="idno">ID Number</label>
+            <input type="text" id="idno">
+            <label for="pname">Patient Name</label>
+            <input type="text" id="pname" value="Jane Doe">
+            <label for="relation">Relation to Patient</label>
+            <select name="relation" id="relation">
+                <option value="" disabled selected>Select relation</option>
+                <option value="spouse">Spouse/Partner</option>
+                <option value="parent">Parent</option>
+                <option value="child">Child</option>
+                <option value="sibling">Sibling</option>
+                <option value="grandparent">Grandparent</option>
+                <option value="aunt_uncle">Aunt/Uncle</option>
+                <option value="cousin">Cousin</option>
+                <option value="legal">Legal Representetive</option>
+                <option value="friend">Friend</option>
+                <option value="clergy">Clergy/Spiritual Advisor</option>
+                <option value="caregiver">Caregiver</option>
+            </select>
+            <label for="phone">Tel Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="083-891-9456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="submit" value="check in">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
